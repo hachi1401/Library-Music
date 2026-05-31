@@ -124,3 +124,32 @@ padding-left: 15px;
     background: #f0f0f0;
     color: #0a0a0a;
 }
+.content h2 +.album-grid{
+margin-top: 20px;
+}
+.section-gap{
+    margin-top: 50px;
+}
+.album-grid {
+    display:  grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.album-card{
+    border: 2px solid #f0f0f0;
+    padding:10px ;
+    cursor: pointer;
+}
+.album-card:hover{
+    background: #f0f0f0;
+    color: #0a0a0a;
+}
+.album-cover{
+    width: 100%;
+    aspect-ratio: 1;
+    background: #1a1a1a;
+    border: 3px solid #333;
+    margin-bottom: 10px;
+}
