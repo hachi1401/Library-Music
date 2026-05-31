@@ -13,10 +13,20 @@
   <body>
     <nav>
       <p class="nav-logo">LIZ MUSIC</p>
-      <ul>
+      <div class="search-bar">
+        <input type="text" placeholder="SEARCH SONGS, ARTISTS..." />
+        <button>SEARCH</button>
+      </div>
+
+      <ul class="nav-links">
         <li><a href="../index.html">HOME</a></li>
-        <li><a href="about.html"></a></li>
+        <li><a href="about.html">ABOUT</a></li>
       </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn-login">LOGIN</a>
+        <a href="register.html" class="btn-register">REGISTER</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
     </nav>
     <main>
       <aside>
@@ -30,42 +40,42 @@
         <h2>// TRENDING NOW</h2>
         <div class="song-grid">
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
           <div class="song-card">
-            <div class="song cover"></div>
+            <div class="song-cover"></div>
             <p class="song-title">SONG NAME</p>
             <p class="song-artist">Artist Name</p>
           </div>
@@ -98,5 +108,11 @@
         </div>
       </section>
     </main>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>
