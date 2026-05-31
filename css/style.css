@@ -32,6 +32,8 @@ nav a{
 }
 nav a:hover{
     opacity: 0.5px;
+    background: #f0f0f0;
+    color: #0a0a0a;
 }
 header{
     border-bottom: 3px solid #f0f0f0;
@@ -64,4 +66,61 @@ aside{
     display:  flex;
     justify-content: space-between;
     align-items: center;
+}
+.content h2{
+font-size: 24px;
+letter-spacing: 3px;
+margin-bottom: 30px;
+border-left: 4px solid #f0f0f0;
+padding-left: 15px;
+}
+.song-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.song-card {
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.song-card:hover {
+  background: #f0f0f0;
+  color: #0a0a0a;
+}
+
+.song-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+
+.song-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.song-artist {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+.enter-btn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 40px;
+    border:  3px solid #f0f0f0;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.enter-btn:hover{
+    background: #f0f0f0;
+    color: #0a0a0a;
 }
