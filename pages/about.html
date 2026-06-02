@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - LIZ MUSIC</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <p class="nav-logo">LIZ MUSIC</p>
+      <ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="library.html">LIBRARY</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn-login">LOGIN</a>
+        <a href="register.html" class="btn-register">REGISTER</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <div class="about-hero">
+      <p class="label">// ABOUT US</p>
+      <h1>LIZ MUSIC</h1>
+      <p class="subtitle">A personal music library built with passion</p>
+    </div>
+
+    <section class="about-content">
+      <div class="about-block">
+        <p class="label">// THE PROJECT</p>
+        <h2>WHAT IS LIZ MUSIC?</h2>
+        <p>
+          LIZ MUSIC là một website thư viện nhạc cá nhân được phát triển từ đầu
+          bằng HTML và CSS thuần túy. Dự án mô phỏng giao diện của một nền tảng
+          phát nhạc trực tuyến hiện đại, đồng thời kết hợp phong cách nghệ thuật
+          truyện tranh nổi bật lấy cảm hứng từ Zenless Zone Zero, mang đến trải
+          nghiệm trực quan và sinh động cho người dùng.
+        </p>
+      </div>
+
+      <div class="about-divider"></div>
+
+      <div class="about-block">
+        <p class="label">// THE DEVELOPER</p>
+        <h2>WHO BUILT THIS?</h2>
+        <div class="about-card">
+          <div class="about-info">
+            <p class="about-name">PHẠM GIA TÚ</p>
+            <p class="about-detail">MSSV: DH52302201</p>
+            <p class="about-detail">Class: D23-TH11 — Ca 9</p>
+            <p class="about-detail">Subject: Web Design</p>
+            <p class="about-detail">University: UEF</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-divider"></div>
+
+      <div class="about-block">
+        <p class="label">// TECH STACK</p>
+        <h2>BUILT WITH</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <p class="tech-name">HTML5</p>
+            <p class="tech-desc">Page structure</p>
+          </div>
+          <div class="tech-item">
+            <p class="tech-name">CSS3</p>
+            <p class="tech-desc">Styling & layout</p>
+          </div>
+          <div class="tech-item">
+            <p class="tech-name">JAVASCRIPT</p>
+            <p class="tech-desc">Interactions</p>
+          </div>
+          <div class="tech-item">
+            <p class="tech-name">GITHUB PAGES</p>
+            <p class="tech-desc">Hosting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2026 LIZ MUSIC — ALL RIGHTS RESERVED</p>
+        <p class="footer-made">MADE WITH ♥ IN VIETNAM</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

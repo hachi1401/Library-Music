@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — LIZ MUSIC</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <p class="nav-logo">LIZ MUSIC</p>
+      <ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <div class="auth-page">
+      <div class="auth-box">
+        <p class="nav-logo" style="font-size: 24px">LIZ MUSIC</p>
+        <h2 class="auth-title">WELCOME BACK</h2>
+
+        <div class="auth-field">
+          <label>EMAIL</label>
+          <input type="email" placeholder="name@domain.com" />
+        </div>
+
+        <div class="auth-field">
+          <label>PASSWORD</label>
+          <input type="password" placeholder="••••••••" />
+        </div>
+
+        <button class="auth-btn">LOG IN</button>
+
+        <p class="auth-divider">— OR —</p>
+
+        <button class="auth-social-btn">
+          <img src="../image/download.png" alt="fb" /> CONTINUE WITH FACEBOOK
+        </button>
+        <button class="auth-social-btn">
+          <img src="../image/download (1).png" alt="gh" /> CONTINUE WITH GITHUB
+        </button>
+
+        <p class="auth-switch">
+          Don't have an account? <a href="register.html">REGISTER</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
